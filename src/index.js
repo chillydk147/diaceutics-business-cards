@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <App
-    baseDir="https://www.diaceutics.co.uk/card/"
+    baseDir="https://diaceutics-business-cards.netlify.app/"
     data={data}
     ref={(ourComponent) => {
       window.ourComponent = ourComponent;
