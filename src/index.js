@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import data from "./data/data.json";
+import "./styles.css";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App
+    baseDir="https://www.diaceutics.co.uk/card/"
+    data={data}
+    ref={(ourComponent) => {
+      window.ourComponent = ourComponent;
+    }}
+  />,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
